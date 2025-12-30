@@ -14,5 +14,14 @@
   <li>Input features : </li>
   <ol>
     <li>Airline</li>
+    <li>Date_of_Journey</li>
+    <li>Source</li>
+    <li>Destination</li>
+    <li>Route</li>
+    <li>Departure</li>
+    <li>Arrival time</li>
+    <li>Duration</li>
+    <li>Total stops</li>
+    <li>Additional information</li>
   </ol>
 </ul>
