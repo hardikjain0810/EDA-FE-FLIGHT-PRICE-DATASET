@@ -1,27 +1,57 @@
-# Flight Price Prediction - Exploratory Data Analysis and Feature Engineering
-<br>
-<h2>Project Summary :</h2>
-<p>End-to-end Exploratory Data Analysis (EDA) and Feature Engineering project on flight booking data to prepare a machine learning ready dataset for price prediction.</p>
-<p>This project demonstratesstrong skills in data preprocessing, statistical analysis, feature extraction and data visualization, commonly required for Data Analyst, Data Scientist and ML Engineer roles.</p>
-<h2>Business Objective :</h2>
-<p>Flight ticket prices fluctuate based on multiple parameters such as airline, travel date, duration and number of stops.</p>
-<p>The objective is to analyze pricing patterns, engineer meaningful features and create a clean structured dataset suitable for regression based ml model</p>
-<h2>Dataset Details :</h2>
+<h1>✈️ Flight Price Prediction – EDA & Feature Engineering</h1>
+<h3>📌 Project Overview</h3>
+
+This project focuses on Exploratory Data Analysis (EDA) and Feature Engineering for a Flight Price Prediction problem. The goal is to clean, transform, and prepare raw flight booking data so it can be effectively used for machine learning models.
+
+The notebook walks through real-world data preprocessing steps such as handling dates & times, extracting useful features, encoding categorical variables, and preparing a final model-ready dataset.
+
+<h3>🔍 Exploratory Data Analysis (EDA)</h3>
+
+The EDA process includes:
 <ul>
-  <li>Data Format : Excel (.xlsx)</li>
-  <li>Rows : Flight booking records</li>
-  <li>Target variable : Price</li>
-  <li>Input features : </li>
-  <ol>
-    <li>Airline</li>
-    <li>Date_of_Journey</li>
-    <li>Source</li>
-    <li>Destination</li>
-    <li>Route</li>
-    <li>Departure</li>
-    <li>Arrival time</li>
-    <li>Duration</li>
-    <li>Total stops</li>
-    <li>Additional information</li>
-  </ol>
+<li>Inspecting dataset shape and data types</li>
+<li>Checking missing values and handling them</li>
+<li>Understanding categorical vs numerical features</li>
+<li>Visual exploration using Matplotlib and Seaborn</li>
 </ul>
+
+🛠️ Feature Engineering Steps
+<ol>
+1️⃣ Date & Time Feature Extraction
+    <ul>
+        <li>Extracted day and month from Date_of_Journey</li>
+        <li>Converted Dep_Time and Arrival_Time into hours and minutes</li>
+        <li>Dropped original date/time columns after extraction</li>
+    </ul>
+2️⃣ Duration Processing
+<ul>
+        <li>Converted flight duration (hours & minutes) into numerical format</li>
+        <li>Created separate features for duration hours and minutes</li>
+</ul>
+
+3️⃣ Handling Categorical Variables
+<ul>
+        <li>Applied One‑Hot Encoding for categorical features such as:</li>
+        <ul>
+          <li>Airline</li>
+          <li>Source</li>
+          <li>Destination</li>
+          <li>Route</li>
+        </ul>
+        <li>Removed unnecessary or redundant columns after encoding</li>
+</ul>
+4️⃣ Column Removal
+
+Dropped columns that were no longer required after feature extraction:
+<ul>
+<li>Airline</li>
+
+<li>Source</li>
+
+<li>Destination</li>
+
+<li>Additional_Info</li>
+
+Raw Date & Time columns
+</ul>
+</ol>
