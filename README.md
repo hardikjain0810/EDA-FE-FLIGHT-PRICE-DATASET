@@ -15,7 +15,7 @@ The EDA process includes:
 <li>Visual exploration using Matplotlib and Seaborn</li>
 </ul>
 
-🛠️ Feature Engineering Steps
+<h3>🛠️ Feature Engineering Steps</h3>
 <ol>
 1️⃣ Date & Time Feature Extraction
     <ul>
@@ -50,8 +50,24 @@ Dropped columns that were no longer required after feature extraction:
 
 <li>Destination</li>
 
+
 <li>Additional_Info</li>
 
 Raw Date & Time columns
 </ul>
 </ol>
+<h3>📊 Output</h3>
+
+<ul>
+    <li>A cleaned and transformed dataset ready for machine learning models</li>
+
+<li>Improved feature representation for better prediction performance</li>
+</ul>
+
+<h3>Next Steps</h3>
+<ul>
+    <li>Apply regression models (Linear Regression, Random Forest, XGBoost, etc.)</li>
+    <li>Perform feature selection</li>
+    <li>Hyperparameter tuning</li>
+    <li>Model evaluation and comparison</li>
+</ul>
